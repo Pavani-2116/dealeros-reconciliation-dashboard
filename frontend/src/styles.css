@@ -1,0 +1,23 @@
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, sans-serif; background: #f6f7f9; color: #1d2330; }
+.page { max-width: 1000px; margin: 0 auto; padding: 24px 16px; }
+h1 { font-size: 1.5rem; margin: 0 0 16px; }
+.controls { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; }
+.controls label { display: flex; flex-direction: column; gap: 4px; font-size: 0.85rem; font-weight: 600; }
+select { padding: 6px 8px; font-size: 1rem; min-width: 180px; }
+.status { padding: 12px; background: #fff; border: 1px solid #d9dde5; border-radius: 6px; }
+.status.error { background: #fdecec; border-color: #e4a1a1; color: #8a1f1f; }
+.table-wrap { overflow-x: auto; background: #fff; border: 1px solid #d9dde5; border-radius: 6px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #eceef2; vertical-align: top; }
+th { background: #eef0f4; font-size: 0.85rem; white-space: nowrap; }
+.num { text-align: right; font-variant-numeric: tabular-nums; }
+.sortable { cursor: pointer; user-select: none; }
+.sortable:hover { background: #dfe3ea; }
+.note { font-size: 0.75rem; color: #5b6475; margin-top: 2px; }
+.tag { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.8rem; background: #e3e7ee; white-space: nowrap; }
+.tag.MISSING_IN_B { background: #fde7c8; }
+.tag.ORPHAN_IN_B { background: #f6d5e3; }
+.tag.DUPLICATE_IN_B { background: #d9e6fb; }
+.tag.VALUE_MISMATCH { background: #fbd4d4; }
+.tag.LOCATION_MISMATCH, .tag.DATE_MISMATCH { background: #e5dcf7; }
+.tag.VOIDED_IN_A { background: #d7efe0; }
